@@ -1,0 +1,427 @@
+/* makes the body to border box */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* applies font to head and body */
+
+head, body {
+    font-family: 'Acme', sans-serif;
+}
+
+/* makes all divs one level lower than main have display of flex and stretch to the bottom of page */
+
+main>div {
+    display: flex;
+    height: 100%;
+}
+/* fix header at the top */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 9999999;
+}
+/* makes the navbar have the color of husky purple, white text, and a hamburger menu with a click 
+    to show detail. */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #363C74;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.brand-title a {
+    color: white;
+}
+
+.navbar-links {
+    display: none;
+    width: 100%;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navbar-links li {
+    list-style: none;
+    text-align: center;
+}
+
+.button-container-create-post a {
+    font-size: 1.3rem;
+    background-color: #363C74;
+    color: white;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+}
+
+.navbar-links li a:hover {
+    background-color: lightslategray;
+}
+
+.navbar-links.active {
+    display: flex;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1.15rem;
+    right: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45px;
+    height: 35px;
+
+    background-color : rgb(78, 84, 129);
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* change font size of the subtitle to 2rem */
+
+.sub-title {
+    font-size: 2rem;
+}
+
+/* search box decoration */
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    width: 80%;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.fa-search {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 25px;
+    color: #363C74;
+    font-size: 25px;
+}
+/* make the form centered and add 5rem margin to the top and 0 margin to the bottom  */
+
+.form-inline {
+    justify-content: center;
+    margin-top: 5rem;
+    margin-bottom: 0;
+}
+
+/* make the posts border-box */
+
+main .posts {
+    box-sizing: border-box;
+}
+
+/* change width to 100% and add 1rem padding to column in posts */
+
+.column {
+    width: 100%;
+    padding: 1rem;
+}
+
+/* cuts 5px of margin of all rows in posts */
+
+.row {
+    margin: 0 -5px;
+}
+
+/* adds shadow and 16px padding to posts
+    makes the text in posts centered and gives the posts a background color of white*/
+
+.column>div {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+/* makes the posts gray if hovered */
+
+.column div:hover {
+    color: rgb(148, 146, 146);
+}
+
+/*modify footer*/
+footer {
+    display: block;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* modifies the button on each post */
+
+.column .button.fit {
+    background-color: #7f92cf;
+    border-radius: 4px;
+    border: 0;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    height: 2.85em;
+    line-height: 2.95em;
+    padding: 0 1.5em;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* change the size of each image on posts */
+
+.column img {
+    height: 50%;
+    width: 100%;
+}
+
+/* changes the size of each image in post1 detail page */
+
+.postimg img {
+    height: 70%;
+    width: 70%;
+    margin: 2rem;
+}
+
+/* adds 2rem margin on left and right to post1 information */
+
+.postinfo {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* changes the font size to 2rem and adds 2rem margin to top and left of post1 detail's title */
+
+.posttitle {
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+/* add margin, color, background color and width to button */
+
+.respondbtn {
+    margin: 1.5rem;
+    background-color: #7f92cf;
+    color: white;
+    width: 84%;
+}
+
+/* edit separator line */
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border-style: inset;
+    border-width: 1px;
+}
+
+/* adjusts the position of the form input and drop down selection */
+
+form input, form select {
+    width: 100%;
+    padding: 12px 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 8px;
+    padding-right: 60px;
+    box-sizing: border-box;
+    border: 2px solid #363C74;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+/* adjusts the position and changes the size of the textbox */
+
+form textarea {
+    border-radius: 4px;
+    width: 100%;
+    padding: 12px 20px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* modify the button in the create post page */
+
+.button-container-create-post {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* adjusts the position of post 1 */
+
+.response .column .card1 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Adjust the header and button for the create post page */
+
+.create-descr {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* changes footer to visible, html height, title and font size when page width is increased to 420px */
+
+@media (min-width:420px) {
+    footer {
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    .column.index {
+        width: 50%;
+        padding: 2rem;
+    }
+
+    .sub-title {
+        font-size: 2.5rem;
+    }
+
+    .posttitle {
+        font-size: 4rem;
+    }
+
+    .postinfo, .response p {
+        font-size: 1.5rem;
+    }
+
+    .response h3 {
+        font-size: 2rem;
+    }
+
+    .respondbtn {
+        width: 92%;
+    }
+
+}
+
+/* shows image and modifies the position and font size when width is increased to 560px */
+
+@media (min-width:560px) {
+    .column img {
+        display: block;
+    }
+
+    .column.index {
+        padding: 3rem;
+    }
+
+    .sub-title {
+        font-size: 3rem;
+    }
+
+    .postimg img {
+        height: 20rem;
+        width: 20rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: initial;
+    }
+
+    .navbar-links ul {
+        flex-direction: row;
+    }
+
+    .navbar-links li {
+        margin-top: .2rem;
+    }
+
+    .navbar-links li a {
+        font-size: 1.3rem;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .search-box {
+        width: 55%;
+    }
+
+}
+
+/* adjusts position and displays detail of post1 when width is increased to 900px */
+
+@media (min-width:900px) {
+    .column.index {
+        width: 33%;
+    }
+
+    .respondbtn {
+        width: 95%;
+    }
+
+    .post-detail {
+        display: flex;
+    }
+    
+    .postinfo{
+        margin-top: 2rem;
+    }
+
+}

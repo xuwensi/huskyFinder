@@ -1,0 +1,43 @@
+[
+    {
+        "title": "INFO300",
+        "imageSource": "./img/3.jpg",
+        "imageCite": "https://unsplash.com/photos/gMpjl7mEBD8",
+        "content": "Looking for a study group!",
+        "name":"Kevin Lee",
+        "postInfo":"Hey guys! I am a Sophomore in Info. I'm taking INFO300 this quarter and want to find a study group! Please respond to this post if you are interested. Looking forward to working with you guys!",
+        "email":"kevinl@uw.edu",
+        "groupSize": "5",
+        "currentSize": "1"
+    }, {
+        "title": "CSE373",
+        "imageSource": "./img/1.jpg",
+        "imageCite": "https://zhuanlan.zhihu.com/p/63936695",
+        "content": "Looking for 1 mentor!",
+        "name":"Alvin Zhu",
+        "postInfo":"Hey guys! I am a Junior in Informatics. I'm taking CSE373 this quarter and want to find a mentor who can helps me! Please respond to this post if you are interested. Looking forward to working with you guys!",
+        "email":"alvinz@uw.edu",
+        "groupSize": "2",
+        "currentSize": "1"
+    }, {
+        "title": "INFO340",
+        "imageSource": "./img/4.jpg",
+        "imageCite": "https://unsplash.com/photos/2guarBycJJQ",
+        "content": "Looking for 1 project member!",
+        "name":"Jacob Vaughan",
+        "postInfo":"Hey guys! I am a Junior in Informatics. I'm taking INFO340 this quarter and want to find a project member! Please respond to this post if you are interested. Looking forward to working with you guys!",
+        "email":"jackv@uw.edu",
+        "groupSize": "2",
+        "currentSize": "1"
+    }, {
+        "title": "DESIGN166",
+        "imageSource": "./img/2.jpg",
+        "imageCite": "http://dy.163.com/v2/article/detail/F0UKMLLL0546AAXE.html",
+        "content": "Looking for 1 study partner!",
+        "name":"Emily Lipson",
+        "postInfo":"Hey guys! I am a Junior in Informatics. I'm taking Design166 this quarter and want to find a study partner! Please respond to this post if you are interested. Looking forward to working with you guys!",
+        "email":"emilyl@uw.edu",
+        "groupSize": "2",
+        "currentSize": "1"
+    }
+    ]

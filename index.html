@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Wensi Xu, Larry Li">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" shrink-to-fit="no">
+    <meta name="description"
+        content="This application aims to help UW students find study partner, study group, mentor or proejct member">
+    <title>Husky Finder</title>
+    <script src="https://kit.fontawesome.com/de8cf8ae02.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/png" href="./img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Acme" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mockupStyle.css">
+
+</head>
+
+<body>
+    <!-- Navigation Bar at the top of the page -->
+    <header>
+        <nav class="navbar">
+            <div class="brand-title"><a href="#">Husky Finder</a></div>
+            <button class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">My Group</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Sign Out</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- create post and post detail buttons located at the top right / left corner below the navbar -->
+        <div class="d-flex flex-row p-3 justify-content-between">
+            <a href="#" class="btn btn-success create-post-btn" role="button">Create Post</a>
+            <a href="#" class="btn btn-success create-post-btn" id="postDetailBtn" role="button">Post Detail</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="mainPage">
+            <section>
+                <!-- page subtitle -->
+                <div class="container container-fluid">
+                    <div class="d-flex flex-row justify-content-center">
+                        <h2 class="sub-title flex-item">Check out these Huskies!</h2>
+                    </div>
+                </div>
+                <!-- search box -->
+                <div class="wrapper">
+                    <dic class="search-box">
+                        <input type="text" placeholder="Search for a class name" id="search-input" aria-label="Search">
+                        <a class="search-icon" href="#" role="button" id="searchicon"><i class="fas fa-search"
+                                role="button" tabindex="0"></i></a>
+                    </dic>
+                </div>
+
+            </section>
+
+            <!-- the post section -->
+            <section class="posts">
+                <div class="row">
+
+                </div>
+            </section>
+
+
+        </section>
+
+        <section class="d-none" id="createPostPage">
+            <!-- Create post form -->
+            <div class="create-descr">
+                <h1>Create a Post</h1>
+            </div>
+
+            <form id="signUpForm" class="form" novalidate>
+                <!-- name enter field -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="input-name">Name</label>
+                        <input type="text" class="form-control" name="input-name" id="input-name"
+                            placeholder="First name / Last name">
+                    </div>
+                </div>
+
+                <!-- email enter field -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="input-email">Email</label>
+                        <input type="email" class="form-control" name="input-email" id="input-email"
+                            placeholder="Your contact email">
+                    </div>
+                </div>
+
+                <!-- Post title enter field -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="post-title">Post Title</label>
+                        <input type="text" class="form-control" name="post-title" id="post-title"
+                            placeholder="ex. INFO200">
+                    </div>
+                </div>
+                <!-- course name enter field -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="post-intro">Post Intro</label>
+                        <input type="text" class="form-control" name="post-intro" id="post-intro"
+                            placeholder="ex. looking for a study group">
+                    </div>
+                </div>
+                <!-- category selection -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="category">Post Category</label>
+                        <select name="category" id="category">
+                            <option value="Study Partner">Study Partner</option>
+                            <option value="Study Group">Study Group</option>
+                            <option value="Mentor">Mentor</option>
+                            <option value="Project Member">Project Member</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- group size selection -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="group-size">Group Size</label>
+                        <select class="group-size" name="group-size" id="group-size">
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="notApplicable">Not Applicable</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- post title description enter field -->
+                <div class="form-row justify-content-center">
+                    <div class="form-group col-9 col-xl-6">
+                        <label for="textarea">Post Description</label>
+                        <br>
+                        <textarea rows="5" id="textarea" class="textarea" name="textarea"
+                            placeholder="Please describe..."></textarea>
+                    </div>
+                </div>
+
+                <!-- submit / cancel button -->
+                <div class="button-container-create-post">
+                    <div class="p2 my-auto">
+                        <a href="index.html" class="btn" id="submitBtn" role="button">Submit</a>
+                    </div>
+                    <div class="p-2 my-auto">
+                        <a href="index.html" class="btn" role="button">Cancel</a>
+                    </div>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="d-none" id="postdetailPage">
+        </section>
+    </main>
+    <footer>
+        <!-- Author Info -->
+        <p>Created by Wensi Xu and Larry Li.</p>
+        <address>
+            Contact us at <a href="mailto:wensix@uw.edu">wensix@uw.edu</a>, or at <a
+                href="tel:484-123-4567">484-123-4567</a>.
+        </address>
+        <p>&copy; 2020</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-promise/4.1.1/es6-promise.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
